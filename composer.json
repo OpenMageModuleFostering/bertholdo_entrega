@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Bertholdo_Entrega",
+    "type": "magento-module",
+    "license": "GPL",
+    "homepage": "",
+    "description": "The Brt Delivery module was designed by the company Bertholdo Consulting, in order to help the administrator of the virtual store in the delivery process of their products to customers using its own means of delivery such as a motorcycle courier, car, truck and so on.",
+    "authors": [
+    {
+        "name": "Luciano Albis",
+        "email": "lucianoalbis@yahoo.com.br"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

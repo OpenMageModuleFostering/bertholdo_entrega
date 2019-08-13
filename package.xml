@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Bertholdo_Entrega</name>
+    <version>1.0.1</version>
+    <stability>stable</stability>
+    <license>GPL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>The Brt Delivery module was designed by the company Bertholdo Consulting, in order to help the administrator of the virtual store in the delivery process of their products to customers using its own means of delivery such as a motorcycle courier, car, truck and so on.</summary>
+    <description>The process is very simple, just generate the CSV file and modify the information of the postal code ranges, if you want to register a new range through the file just enter the information yourself, always remembering to follow the format of the file and importing the same route of administration. We created a video that demonstrates the use of the module following all the necessary steps aiming thus facilitate its use.</description>
+    <notes>Revised version.</notes>
+    <authors><author><name>Luciano Albis</name><user>lucianoalbis</user><email>lucianoalbis@yahoo.com.br</email></author><author><name>Bertholdo Consultoria</name><user>bertholdo</user><email>bertholdo@bertholdo.com.br</email></author></authors>
+    <date>2014-07-15</date>
+    <time>15:37:30</time>
+    <contents><target name="magecommunity"><dir name="Bertholdo"><dir name="Entrega"><dir name="Helper"><file name="Data.php" hash="2a05828134226589b976ee7e974b3ea2"/></dir><dir name="Model"><dir name="Carrier"><file name="EntregaMethod.php" hash="97f80a02a508f3f9017b69e3fa1ddbd1"/></dir></dir><file name="README.TXT" hash="2d35b56344c1de36cb88dbe5dce58d3d"/><dir name="controllers"><dir name="Adminhtml"><file name="EntregarangecepController.php" hash="aa35e0036af36256e0aa18a9701a460d"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="024359bfd80da4325530cfa9e67f0950"/><file name="config.xml" hash="efa284ad00e0331953f6dda8de235454"/><file name="system.xml" hash="62c1aeb333150fe079897916fa0f9879"/></dir><dir name="sql"><dir name="entrega_setup"><file name="mysql4-install-1.0.0.php" hash="cd58c212ebfab44e956e77f1f029cb91"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Bertholdo_Entrega.xml" hash=""/></dir></target><target name="magelocale"><dir name="pt_BR"><file name="Bertholdo_Entrega.csv" hash=""/></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="entrega.xml" hash=""/></dir><dir name="template"><dir name="entrega"><file name="entregarangecep.phtml" hash=""/></dir></dir></dir></dir></dir></target><target name="mageskin"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="Bertholdo"><file name="logo_brtentrega.jpg" hash=""/></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.3.5</min><max>5.5.0</max></php></required></dependencies>
+</package>
