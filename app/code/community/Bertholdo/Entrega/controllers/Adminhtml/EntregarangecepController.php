@@ -38,7 +38,7 @@ class Bertholdo_Entrega_Adminhtml_EntregarangecepController extends Mage_Adminht
 		{
 			if ($this->getRequest()->getPost())
 			{
-				if( !empty($csvRangeCeps) && ( ($tipoFile == "text/csv") || ($tipoFile == "application/vnd.ms-excel") ) )
+				if( !empty($csvRangeCeps) && ( ($tipoFile == "text/csv") || ($tipoFile == "application/vnd.ms-excel") || ($tipoFile == "application/csv") ) )
 				{
 					// SALVANDO O ARQUIVO
 
@@ -81,6 +81,10 @@ class Bertholdo_Entrega_Adminhtml_EntregarangecepController extends Mage_Adminht
 						Mage::getSingleton('adminhtml/session')->addError($message);						
 					}
 
+					// LIMPANDO A TABELA DE RANGE DE CEPS CASO NÃO QUEIRA UTILIZAR OS CEPS EXISTENTES
+
+					$objBD_write->query("TRUNCATE $entrega_range_cep");
+
 					// ATUALIZANDO PRODUTOS
 
 					$qtdLinhas = count($linhasFile);
@@ -98,8 +102,8 @@ class Bertholdo_Entrega_Adminhtml_EntregarangecepController extends Mage_Adminht
 						$peso_fim = $linhasFile[$i][3];
 						$valor_compra = $linhasFile[$i][4];
 						$valor_sem_desc = $linhasFile[$i][5];
-						$valor_com_desc = $linhasFile[$i][6];
-					
+						$valor_com_desc = $linhasFile[$i][6];					
+
 						// ATUALIZANDO OS RANGES DE CEP
 
 						try
